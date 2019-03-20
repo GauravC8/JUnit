@@ -1,0 +1,70 @@
+JUnit Testing
+Unit- a class
+
+TDD: test driven development
+----first write the test than Add functionality to pass the test.
+
+Asserts: expected output comapre with the output received
+Test setup and teardown: 
+Exception testing'
+test Suites :collection of many test cases
+Parameterised testing : workd s
+Rules
+Integration with Built System
+
+
+Assert methods:
+	 assertEquals()
+	 assertFalse()
+	 assertNotNull()
+	 assertNull()
+	 assertTrue()
+	 fail()
+	
+Annotation: meta tags
+	@Test @Test(timeout=1000)
+	@Before
+	@After
+	@BeforeClass  method should be static
+	@AfterClass   method should be static
+	@Ignore
+	
+Assert Class Methods
+
+Mockito
+
+-Behaviour Driven Development
+-used to mock interface so dummy functionality can be added to a mock interface that can be used in unit testing.
+-test the functionality of a class in isolation
+-doesn't required a database connection
+-mock object (or test doubles )are proxy object
+-stud class is a partial implimentation of interface
+-can be used in conjunction with JUnit
+
+
+studs is an object that has predefined return value to method exe made during test
+Spies are objects that are to similar to studs but they aditionally record how they were executed.
+Mocks are the object that have return values to method execution made during test
+
+Annotation:
+	@Mock mock creation
+	@Spy create spy instance
+	@InjectMocks used to initiate the tested object automatically and all the @Mock or 	@Spy annotated field dependencies into if
+	@Captor used to create argument captor
+	
+	@RunWith
+	MockitoAnnotation.initMocks(testclass/this)
+	MockitoJUnitRunner.class
+	
+	@Rule to process annotation
+	
+Mock object by :
+	1.org.mockito.Mockito.*; static import to use mock() directly in your test
+	2.@Mock
+	
+> when(____).thenReturn(_____)
+> verification using assert
+	
+	
+	
+	
